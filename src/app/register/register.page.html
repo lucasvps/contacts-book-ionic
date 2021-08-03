@@ -8,11 +8,12 @@
 <ion-list>
   <ion-item>
     <ion-label position="floating">Nome</ion-label>
-    <ion-input></ion-input>
+    <ion-input type="text" [(ngModel)]="_name" ></ion-input>
   </ion-item>
   <ion-item>
     <ion-label position="floating">Telefone</ion-label>
-    <ion-input></ion-input>
+    <ion-input type="number" [(ngModel)]="_phone"></ion-input>
   </ion-item>
+  <ion-button class="ion-margin" expand="block" size="large" (click)="register()" >Register</ion-button>
 </ion-list>
 </ion-content>
