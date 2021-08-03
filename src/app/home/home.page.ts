@@ -8,10 +8,14 @@ import { Component } from '@angular/core';
 
 export class HomePage {
 
-  contatos: string[];
+  private contacts: any[];
 
   constructor() {
-    this.contatos = ['Lucas Vieira', 'Emily', 'Marina'];
+    this.contacts = [
+      {name: 'Lucas Vieira', phone : '42999504303'},
+      {name: 'Emily',phone : '42999504303'},
+      {name: 'Marina', phone : '42999504303'}
+    ];
   }
 
 }
